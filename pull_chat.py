@@ -6,7 +6,7 @@ import os
 server = 'irc.chat.twitch.tv'
 port = 6667
 nickname = 'gimme_data'
-token ='oauth:q8l3yoe47zjyuz9781yemjhb06oomx'
+token ='REDACTED'
 if not os.path.exists('twitch_chat.csv'):
 	with open('twitch_chat.csv', 'w') as f:
 		writer = csv.DictWriter(f, fieldnames = ["Channel", "Username", "Message"])
