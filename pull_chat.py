@@ -6,7 +6,7 @@ import os
 server = 'irc.chat.twitch.tv'
 port = 6667
 nickname = 'gimme_data'
-token ='REDACTED'
+token ='oauth:q8l3yoe47zjyuz9781yemjhb06oomx'
 if not os.path.exists('twitch_chat.csv'):
 	with open('twitch_chat.csv', 'w') as f:
 		writer = csv.DictWriter(f, fieldnames = ["Channel", "Username", "Message"])
@@ -58,6 +58,9 @@ def scrape_chat(channel_name):
 			print('Pinged Server!')
 		else:
 			response = response[1:]
-			find_info(response)
+			try:
+				find_info(response)
+			except:
+				pass
 
-scrape_chat('disguisedtoast')
+scrape_chat('riotgames')
