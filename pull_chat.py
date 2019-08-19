@@ -7,12 +7,8 @@ server = 'irc.chat.twitch.tv'
 port = 6667
 nickname = 'gimme_data'
 token ='REDACTED'
-if not os.path.exists('twitch_chat.csv'):
-	with open('twitch_chat.csv', 'w') as f:
-		writer = csv.DictWriter(f, fieldnames = ["Channel", "Username", "Message"])
-		writer.writeheader()
 
-def find_info(text):
+def find_info(text, file_name):
 	if '\r\n:' in text:
 		username = text.split('!')[0]
 		find_channel = text.split('PRIVMSG #')[1]
@@ -22,10 +18,10 @@ def find_info(text):
 		remove = text.split('\r\n:')[0] + '\r\n:'
 		next_block = text[len(remove):]
 		if not username.lower().endswith('bot') and message != '':
-			with open('twitch_chat.csv', 'a') as f:
+			with open(file_name + '.csv', 'a') as f:
 				writer = csv.writer(f)
 				writer.writerow([channel, username, message])
-		find_info(next_block)
+		find_info(next_block, channel_name)
 	else:
 		username = text.split('!')[0]
 		find_channel = text.split('PRIVMSG #')[1]
@@ -35,11 +31,15 @@ def find_info(text):
 		if '\r\n' in message:
 			message = message.replace('\r\n', '')
 		if not username.lower().endswith('bot') and message != '':
-			with open('twitch_chat.csv', 'a') as f:
+			with open(file_name + '.csv', 'a') as f:
 				writer = csv.writer(f)
 				writer.writerow([channel, username, message])
 
 def scrape_chat(channel_name):
+	if not os.path.exists('twitch_chat.csv'):
+		with open('twitch_chat.csv', 'w') as f:
+			writer = csv.DictWriter(f, fieldnames = ["Channel", "Username", "Message"])
+			writer.writeheader()
 	channel = '#' + channel_name
 	sock = socket.socket()
 	sock.connect((server, port))
@@ -59,7 +59,7 @@ def scrape_chat(channel_name):
 		else:
 			response = response[1:]
 			try:
-				find_info(response)
+				find_info(response, channel_name)
 			except:
 				pass
 
