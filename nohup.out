@@ -1,0 +1,578 @@
+WARNING:tensorflow:From model.py:73: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From model.py:82: BasicLSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From model.py:84: MultiRNNCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.StackedRNNCells, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:At least two cells provided to MultiRNNCell are the same object and will share weights.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From model.py:94: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/rnn_cell_impl.py:738: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From model.py:111: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING:tensorflow:From model.py:122: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2019-09-03 07:52:27.040630: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2019-09-03 07:52:27.050408: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2999990000 Hz
+2019-09-03 07:52:27.052336: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x6ee6110 executing computations on platform Host. Devices:
+2019-09-03 07:52:27.052364: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+WARNING:tensorflow:From model.py:123: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2019-09-03 07:52:27.707063: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+2019-09-03 07:52:29.581366: W tensorflow/core/framework/allocator.cc:107] Allocation of 1300439040 exceeds 10% of system memory.
+2019-09-03 07:52:38.741949: W tensorflow/core/framework/allocator.cc:107] Allocation of 1300439040 exceeds 10% of system memory.
+2019-09-03 07:52:49.211875: W tensorflow/core/framework/allocator.cc:107] Allocation of 1300439040 exceeds 10% of system memory.
+2019-09-03 07:52:58.418356: W tensorflow/core/framework/allocator.cc:107] Allocation of 1300439040 exceeds 10% of system memory.
+2019-09-03 07:53:07.135223: W tensorflow/core/framework/allocator.cc:107] Allocation of 1300439040 exceeds 10% of system memory.
+WARNING:tensorflow:From model.py:148: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+Epoch   1 Batch   37/37   train_loss = 6.514   time_elapsed = 324.957   time_remaining = 3249249
+Model Trained and Saved
+Epoch   2 Batch   37/37   train_loss = 6.406   time_elapsed = 644.398   time_remaining = 3221346
+Epoch   3 Batch   37/37   train_loss = 6.368   time_elapsed = 962.337   time_remaining = 3206828
+Epoch   4 Batch   37/37   train_loss = 6.347   time_elapsed = 1280.621   time_remaining = 3200272
+Epoch   5 Batch   37/37   train_loss = 6.345   time_elapsed = 1598.188   time_remaining = 3194777
+Epoch   6 Batch   37/37   train_loss = 6.343   time_elapsed = 1916.050   time_remaining = 3191501
+Epoch   7 Batch   37/37   train_loss = 6.343   time_elapsed = 2233.887   time_remaining = 3189033
+Epoch   8 Batch   37/37   train_loss = 6.340   time_elapsed = 2552.235   time_remaining = 3187741
+Epoch   9 Batch   37/37   train_loss = 6.338   time_elapsed = 2870.481   time_remaining = 3186553
+Epoch  10 Batch   37/37   train_loss = 6.342   time_elapsed = 3188.712   time_remaining = 3185523
+Epoch  11 Batch   37/37   train_loss = 6.338   time_elapsed = 3507.071   time_remaining = 3184740
+Model Trained and Saved
+Epoch  12 Batch   37/37   train_loss = 6.329   time_elapsed = 3828.846   time_remaining = 3186876
+Epoch  13 Batch   37/37   train_loss = 6.301   time_elapsed = 4147.270   time_remaining = 3186060
+Epoch  14 Batch   37/37   train_loss = 6.282   time_elapsed = 4465.295   time_remaining = 3185031
+Epoch  15 Batch   37/37   train_loss = 6.269   time_elapsed = 4783.640   time_remaining = 3184310
+Epoch  16 Batch   37/37   train_loss = 6.259   time_elapsed = 5101.765   time_remaining = 3183501
+Epoch  17 Batch   37/37   train_loss = 6.251   time_elapsed = 5420.148   time_remaining = 3182902
+Epoch  18 Batch   37/37   train_loss = 6.242   time_elapsed = 5738.750   time_remaining = 3182456
+Epoch  19 Batch   37/37   train_loss = 6.231   time_elapsed = 6057.075   time_remaining = 3181877
+Epoch  20 Batch   37/37   train_loss = 6.204   time_elapsed = 6375.813   time_remaining = 3181531
+Epoch  21 Batch   37/37   train_loss = 6.190   time_elapsed = 6693.998   time_remaining = 3180924
+Model Trained and Saved
+Epoch  22 Batch   37/37   train_loss = 6.133   time_elapsed = 7015.069   time_remaining = 3181653
+Epoch  23 Batch   37/37   train_loss = 5.968   time_elapsed = 7333.694   time_remaining = 3181229
+Epoch  24 Batch   37/37   train_loss = 5.780   time_elapsed = 7652.043   time_remaining = 3180699
+Epoch  25 Batch   37/37   train_loss = 5.641   time_elapsed = 7970.508   time_remaining = 3180233
+Epoch  26 Batch   37/37   train_loss = 5.531   time_elapsed = 8289.065   time_remaining = 3179813
+Epoch  27 Batch   37/37   train_loss = 5.411   time_elapsed = 8607.434   time_remaining = 3179331
+Epoch  28 Batch   37/37   train_loss = 5.253   time_elapsed = 8925.612   time_remaining = 3178793
+Epoch  29 Batch   37/37   train_loss = 5.069   time_elapsed = 9244.329   time_remaining = 3178455
+Epoch  30 Batch   37/37   train_loss = 4.917   time_elapsed = 9562.663   time_remaining = 3177992
+Epoch  31 Batch   37/37   train_loss = 4.794   time_elapsed = 9881.401   time_remaining = 3177667
+Model Trained and Saved
+Epoch  32 Batch   37/37   train_loss = 4.670   time_elapsed = 10201.793   time_remaining = 3177859
+Epoch  33 Batch   37/37   train_loss = 4.574   time_elapsed = 10520.149   time_remaining = 3177404
+Epoch  34 Batch   37/37   train_loss = 4.475   time_elapsed = 10838.381   time_remaining = 3176921
+Epoch  35 Batch   37/37   train_loss = 4.390   time_elapsed = 11156.443   time_remaining = 3176399
+Epoch  36 Batch   37/37   train_loss = 4.321   time_elapsed = 11474.903   time_remaining = 3175998
+Epoch  37 Batch   37/37   train_loss = 4.248   time_elapsed = 11793.717   time_remaining = 3175697
+Epoch  38 Batch   37/37   train_loss = 4.174   time_elapsed = 12112.161   time_remaining = 3175298
+Epoch  39 Batch   37/37   train_loss = 4.128   time_elapsed = 12430.633   time_remaining = 3174911
+Epoch  40 Batch   37/37   train_loss = 4.061   time_elapsed = 12748.971   time_remaining = 3174494
+Epoch  41 Batch   37/37   train_loss = 3.995   time_elapsed = 13068.060   time_remaining = 3174264
+Model Trained and Saved
+Epoch  42 Batch   37/37   train_loss = 3.929   time_elapsed = 13388.811   time_remaining = 3174423
+Epoch  43 Batch   37/37   train_loss = 3.888   time_elapsed = 13707.411   time_remaining = 3174063
+Epoch  44 Batch   37/37   train_loss = 3.834   time_elapsed = 14025.667   time_remaining = 3173626
+Epoch  45 Batch   37/37   train_loss = 3.785   time_elapsed = 14344.643   time_remaining = 3173354
+Epoch  46 Batch   37/37   train_loss = 3.732   time_elapsed = 14663.384   time_remaining = 3173029
+Epoch  47 Batch   37/37   train_loss = 3.692   time_elapsed = 14981.999   time_remaining = 3172677
+Epoch  48 Batch   37/37   train_loss = 3.641   time_elapsed = 15300.396   time_remaining = 3172282
+Epoch  49 Batch   37/37   train_loss = 3.601   time_elapsed = 15619.203   time_remaining = 3171973
+Epoch  50 Batch   37/37   train_loss = 3.556   time_elapsed = 15937.618   time_remaining = 3171586
+Epoch  51 Batch   37/37   train_loss = 3.506   time_elapsed = 16256.459   time_remaining = 3171285
+Model Trained and Saved
+Epoch  52 Batch   37/37   train_loss = 3.463   time_elapsed = 16576.314   time_remaining = 3171176
+Epoch  53 Batch   37/37   train_loss = 3.418   time_elapsed = 16894.357   time_remaining = 3170720
+Epoch  54 Batch   37/37   train_loss = 3.384   time_elapsed = 17212.332   time_remaining = 3170257
+Epoch  55 Batch   37/37   train_loss = 3.342   time_elapsed = 17531.268   time_remaining = 3169972
+Epoch  56 Batch   37/37   train_loss = 3.310   time_elapsed = 17849.725   time_remaining = 3169601
+Epoch  57 Batch   37/37   train_loss = 3.257   time_elapsed = 18168.098   time_remaining = 3169218
+Epoch  58 Batch   37/37   train_loss = 3.210   time_elapsed = 18486.933   time_remaining = 3168915
+Epoch  59 Batch   37/37   train_loss = 3.179   time_elapsed = 18805.274   time_remaining = 3168529
+Epoch  60 Batch   37/37   train_loss = 3.143   time_elapsed = 19124.044   time_remaining = 3168217
+Epoch  61 Batch   37/37   train_loss = 3.094   time_elapsed = 19442.259   time_remaining = 3167813
+Model Trained and Saved
+Epoch  62 Batch   37/37   train_loss = 3.076   time_elapsed = 19762.969   time_remaining = 3167813
+Epoch  63 Batch   37/37   train_loss = 3.042   time_elapsed = 20081.835   time_remaining = 3167511
+Epoch  64 Batch   37/37   train_loss = 3.022   time_elapsed = 20400.487   time_remaining = 3167176
+Epoch  65 Batch   37/37   train_loss = 2.984   time_elapsed = 20719.619   time_remaining = 3166914
+Epoch  66 Batch   37/37   train_loss = 2.946   time_elapsed = 21038.769   time_remaining = 3166654
+Epoch  67 Batch   37/37   train_loss = 2.909   time_elapsed = 21357.712   time_remaining = 3166360
+Epoch  68 Batch   37/37   train_loss = 2.887   time_elapsed = 21676.604   time_remaining = 3166059
+Epoch  69 Batch   37/37   train_loss = 2.845   time_elapsed = 21995.030   time_remaining = 3165691
+Epoch  70 Batch   37/37   train_loss = 2.825   time_elapsed = 22314.234   time_remaining = 3165433
+Epoch  71 Batch   37/37   train_loss = 2.812   time_elapsed = 22632.935   time_remaining = 3165104
+Model Trained and Saved
+Epoch  72 Batch   37/37   train_loss = 2.774   time_elapsed = 22952.956   time_remaining = 3164958
+Epoch  73 Batch   37/37   train_loss = 2.743   time_elapsed = 23271.768   time_remaining = 3164642
+Epoch  74 Batch   37/37   train_loss = 2.721   time_elapsed = 23590.819   time_remaining = 3164358
+Epoch  75 Batch   37/37   train_loss = 2.689   time_elapsed = 23909.869   time_remaining = 3164073
+Epoch  76 Batch   37/37   train_loss = 2.657   time_elapsed = 24228.846   time_remaining = 3163777
+Epoch  77 Batch   37/37   train_loss = 2.634   time_elapsed = 24548.749   time_remaining = 3163601
+Epoch  78 Batch   37/37   train_loss = 2.622   time_elapsed = 24868.376   time_remaining = 3163385
+Epoch  79 Batch   37/37   train_loss = 2.582   time_elapsed = 25188.206   time_remaining = 3163192
+Epoch  80 Batch   37/37   train_loss = 2.584   time_elapsed = 25507.736   time_remaining = 3162959
+Epoch  81 Batch   37/37   train_loss = 2.562   time_elapsed = 25827.688   time_remaining = 3162776
+Model Trained and Saved
+Epoch  82 Batch   37/37   train_loss = 2.538   time_elapsed = 26149.053   time_remaining = 3162760
+Epoch  83 Batch   37/37   train_loss = 2.509   time_elapsed = 26468.967   time_remaining = 3162563
+Epoch  84 Batch   37/37   train_loss = 2.484   time_elapsed = 26788.482   time_remaining = 3162317
+Epoch  85 Batch   37/37   train_loss = 2.470   time_elapsed = 27107.992   time_remaining = 3162068
+Epoch  86 Batch   37/37   train_loss = 2.439   time_elapsed = 27427.579   time_remaining = 3161826
+Epoch  87 Batch   37/37   train_loss = 2.442   time_elapsed = 27747.678   time_remaining = 3161641
+Epoch  88 Batch   37/37   train_loss = 2.417   time_elapsed = 28067.705   time_remaining = 3161444
+Epoch  89 Batch   37/37   train_loss = 2.394   time_elapsed = 28387.288   time_remaining = 3161196
+Epoch  90 Batch   37/37   train_loss = 2.380   time_elapsed = 28707.128   time_remaining = 3160974
+Epoch  91 Batch   37/37   train_loss = 2.341   time_elapsed = 29026.304   time_remaining = 3160677
+Model Trained and Saved
+Epoch  92 Batch   37/37   train_loss = 2.317   time_elapsed = 29347.446   time_remaining = 3160592
+Epoch  93 Batch   37/37   train_loss = 2.315   time_elapsed = 29666.678   time_remaining = 3160299
+Epoch  94 Batch   37/37   train_loss = 2.293   time_elapsed = 29986.163   time_remaining = 3160031
+Epoch  95 Batch   37/37   train_loss = 2.282   time_elapsed = 30305.489   time_remaining = 3159746
+Epoch  96 Batch   37/37   train_loss = 2.252   time_elapsed = 30624.808   time_remaining = 3159459
+Epoch  97 Batch   37/37   train_loss = 2.251   time_elapsed = 30943.819   time_remaining = 3159141
+Epoch  98 Batch   37/37   train_loss = 2.231   time_elapsed = 31262.784   time_remaining = 3158817
+Epoch  99 Batch   37/37   train_loss = 2.233   time_elapsed = 31582.093   time_remaining = 3158528
+Epoch 100 Batch   37/37   train_loss = 2.188   time_elapsed = 31901.606   time_remaining = 3158259
+Epoch 101 Batch   37/37   train_loss = 2.195   time_elapsed = 32221.186   time_remaining = 3157995
+Model Trained and Saved
+Epoch 102 Batch   37/37   train_loss = 2.184   time_elapsed = 32541.811   time_remaining = 3157832
+Epoch 103 Batch   37/37   train_loss = 2.150   time_elapsed = 32861.307   time_remaining = 3157557
+Epoch 104 Batch   37/37   train_loss = 2.151   time_elapsed = 33181.221   time_remaining = 3157321
+Epoch 105 Batch   37/37   train_loss = 2.131   time_elapsed = 33500.639   time_remaining = 3157036
+Epoch 106 Batch   37/37   train_loss = 2.126   time_elapsed = 33820.085   time_remaining = 3156754
+Epoch 107 Batch   37/37   train_loss = 2.105   time_elapsed = 34139.356   time_remaining = 3156455
+Epoch 108 Batch   37/37   train_loss = 2.100   time_elapsed = 34458.731   time_remaining = 3156164
+Epoch 109 Batch   37/37   train_loss = 2.087   time_elapsed = 34778.129   time_remaining = 3155876
+Epoch 110 Batch   37/37   train_loss = 2.079   time_elapsed = 35097.708   time_remaining = 3155603
+Epoch 111 Batch   37/37   train_loss = 2.041   time_elapsed = 35416.997   time_remaining = 3155303
+Model Trained and Saved
+Epoch 112 Batch   37/37   train_loss = 2.033   time_elapsed = 35738.513   time_remaining = 3155200
+Epoch 113 Batch   37/37   train_loss = 2.009   time_elapsed = 36058.313   time_remaining = 3154943
+Epoch 114 Batch   37/37   train_loss = 2.002   time_elapsed = 36377.500   time_remaining = 3154631
+Epoch 115 Batch   37/37   train_loss = 1.980   time_elapsed = 36696.766   time_remaining = 3154326
+Epoch 116 Batch   37/37   train_loss = 1.979   time_elapsed = 37016.526   time_remaining = 3154063
+Epoch 117 Batch   37/37   train_loss = 1.971   time_elapsed = 37336.388   time_remaining = 3153808
+Epoch 118 Batch   37/37   train_loss = 1.968   time_elapsed = 37656.234   time_remaining = 3153550
+Epoch 119 Batch   37/37   train_loss = 1.951   time_elapsed = 37975.987   time_remaining = 3153283
+Epoch 120 Batch   37/37   train_loss = 1.942   time_elapsed = 38296.176   time_remaining = 3153052
+Epoch 121 Batch   37/37   train_loss = 1.925   time_elapsed = 38615.353   time_remaining = 3152736
+Model Trained and Saved
+Epoch 122 Batch   37/37   train_loss = 1.946   time_elapsed = 38936.046   time_remaining = 3152543
+Epoch 123 Batch   37/37   train_loss = 1.912   time_elapsed = 39255.001   time_remaining = 3152209
+Epoch 124 Batch   37/37   train_loss = 1.882   time_elapsed = 39573.692   time_remaining = 3151853
+Epoch 125 Batch   37/37   train_loss = 1.869   time_elapsed = 39892.681   time_remaining = 3151522
+Epoch 126 Batch   37/37   train_loss = 1.857   time_elapsed = 40212.466   time_remaining = 3151253
+Epoch 127 Batch   37/37   train_loss = 1.871   time_elapsed = 40532.572   time_remaining = 3151009
+Epoch 128 Batch   37/37   train_loss = 1.849   time_elapsed = 40853.435   time_remaining = 3150821
+Epoch 129 Batch   37/37   train_loss = 1.840   time_elapsed = 41174.519   time_remaining = 3150649
+Epoch 130 Batch   37/37   train_loss = 1.831   time_elapsed = 41496.118   time_remaining = 3150513
+Epoch 131 Batch   37/37   train_loss = 1.815   time_elapsed = 41817.997   time_remaining = 3150396
+Model Trained and Saved
+Epoch 132 Batch   37/37   train_loss = 1.812   time_elapsed = 42141.816   time_remaining = 3150420
+Epoch 133 Batch   37/37   train_loss = 1.798   time_elapsed = 42464.345   time_remaining = 3150344
+Epoch 134 Batch   37/37   train_loss = 1.792   time_elapsed = 42786.678   time_remaining = 3150249
+Epoch 135 Batch   37/37   train_loss = 1.773   time_elapsed = 43108.845   time_remaining = 3150139
+Epoch 136 Batch   37/37   train_loss = 1.760   time_elapsed = 43431.123   time_remaining = 3150034
+Epoch 137 Batch   37/37   train_loss = 1.762   time_elapsed = 43753.881   time_remaining = 3149960
+Epoch 138 Batch   37/37   train_loss = 1.744   time_elapsed = 44076.299   time_remaining = 3149858
+Epoch 139 Batch   37/37   train_loss = 1.750   time_elapsed = 44398.931   time_remaining = 3149769
+Epoch 140 Batch   37/37   train_loss = 1.730   time_elapsed = 44721.452   time_remaining = 3149668
+Epoch 141 Batch   37/37   train_loss = 1.729   time_elapsed = 45043.922   time_remaining = 3149560
+Model Trained and Saved
+Epoch 142 Batch   37/37   train_loss = 1.722   time_elapsed = 45367.407   time_remaining = 3149520
+Epoch 143 Batch   37/37   train_loss = 1.726   time_elapsed = 45689.533   time_remaining = 3149383
+Epoch 144 Batch   37/37   train_loss = 1.719   time_elapsed = 46011.914   time_remaining = 3149260
+Epoch 145 Batch   37/37   train_loss = 1.698   time_elapsed = 46334.245   time_remaining = 3149131
+Epoch 146 Batch   37/37   train_loss = 1.682   time_elapsed = 46655.864   time_remaining = 3148951
+Epoch 147 Batch   37/37   train_loss = 1.675   time_elapsed = 46974.717   time_remaining = 3148584
+Epoch 148 Batch   37/37   train_loss = 1.665   time_elapsed = 47293.816   time_remaining = 3148234
+Epoch 149 Batch   37/37   train_loss = 1.679   time_elapsed = 47612.943   time_remaining = 3147887
+Epoch 150 Batch   37/37   train_loss = 1.677   time_elapsed = 47932.332   time_remaining = 3147556
+Epoch 151 Batch   37/37   train_loss = 1.637   time_elapsed = 48251.281   time_remaining = 3147198
+Model Trained and Saved
+Epoch 152 Batch   37/37   train_loss = 1.642   time_elapsed = 48572.149   time_remaining = 3146964
+Epoch 153 Batch   37/37   train_loss = 1.622   time_elapsed = 48891.773   time_remaining = 3146649
+Epoch 154 Batch   37/37   train_loss = 1.609   time_elapsed = 49211.463   time_remaining = 3146338
+Epoch 155 Batch   37/37   train_loss = 1.613   time_elapsed = 49530.422   time_remaining = 3145981
+Epoch 156 Batch   37/37   train_loss = 1.599   time_elapsed = 49849.490   time_remaining = 3145631
+Epoch 157 Batch   37/37   train_loss = 1.608   time_elapsed = 50168.562   time_remaining = 3145281
+Epoch 158 Batch   37/37   train_loss = 1.605   time_elapsed = 50488.162   time_remaining = 3144965
+Epoch 159 Batch   37/37   train_loss = 1.600   time_elapsed = 50808.337   time_remaining = 3144685
+Epoch 160 Batch   37/37   train_loss = 1.577   time_elapsed = 51129.179   time_remaining = 3144444
+Epoch 161 Batch   37/37   train_loss = 1.550   time_elapsed = 51450.947   time_remaining = 3144260
+Model Trained and Saved
+Epoch 162 Batch   37/37   train_loss = 1.555   time_elapsed = 51774.551   time_remaining = 3144185
+Epoch 163 Batch   37/37   train_loss = 1.547   time_elapsed = 52097.854   time_remaining = 3144090
+Epoch 164 Batch   37/37   train_loss = 1.546   time_elapsed = 52421.135   time_remaining = 3143990
+Epoch 165 Batch   37/37   train_loss = 1.550   time_elapsed = 52745.332   time_remaining = 3143941
+Epoch 166 Batch   37/37   train_loss = 1.534   time_elapsed = 53067.595   time_remaining = 3143775
+Epoch 167 Batch   37/37   train_loss = 1.531   time_elapsed = 53389.657   time_remaining = 3143596
+Epoch 168 Batch   37/37   train_loss = 1.517   time_elapsed = 53711.896   time_remaining = 3143425
+Epoch 169 Batch   37/37   train_loss = 1.504   time_elapsed = 54033.908   time_remaining = 3143239
+Epoch 170 Batch   37/37   train_loss = 1.516   time_elapsed = 54356.399   time_remaining = 3143079
+Epoch 171 Batch   37/37   train_loss = 1.500   time_elapsed = 54679.152   time_remaining = 3142932
+Model Trained and Saved
+Epoch 172 Batch   37/37   train_loss = 1.505   time_elapsed = 55003.242   time_remaining = 3142860
+Epoch 173 Batch   37/37   train_loss = 1.501   time_elapsed = 55325.663   time_remaining = 3142690
+Epoch 174 Batch   37/37   train_loss = 1.493   time_elapsed = 55648.222   time_remaining = 3142525
+Epoch 175 Batch   37/37   train_loss = 1.468   time_elapsed = 55970.600   time_remaining = 3142349
+Epoch 176 Batch   37/37   train_loss = 1.463   time_elapsed = 56293.095   time_remaining = 3142178
+Epoch 177 Batch   37/37   train_loss = 1.461   time_elapsed = 56615.674   time_remaining = 3142010
+Epoch 178 Batch   37/37   train_loss = 1.452   time_elapsed = 56938.223   time_remaining = 3141838
+Epoch 179 Batch   37/37   train_loss = 1.451   time_elapsed = 57257.214   time_remaining = 3141470
+Epoch 180 Batch   37/37   train_loss = 1.429   time_elapsed = 57576.878   time_remaining = 3141139
+Epoch 181 Batch   37/37   train_loss = 1.436   time_elapsed = 57896.028   time_remaining = 3140780
+Model Trained and Saved
+Epoch 182 Batch   37/37   train_loss = 1.419   time_elapsed = 58217.209   time_remaining = 3140531
+Epoch 183 Batch   37/37   train_loss = 1.413   time_elapsed = 58536.818   time_remaining = 3140196
+Epoch 184 Batch   37/37   train_loss = 1.400   time_elapsed = 58856.641   time_remaining = 3139874
+Epoch 185 Batch   37/37   train_loss = 1.403   time_elapsed = 59176.189   time_remaining = 3139537
+Epoch 186 Batch   37/37   train_loss = 1.410   time_elapsed = 59495.660   time_remaining = 3139196
+Epoch 187 Batch   37/37   train_loss = 1.409   time_elapsed = 59815.051   time_remaining = 3138851
+Epoch 188 Batch   37/37   train_loss = 1.390   time_elapsed = 60134.017   time_remaining = 3138484
+Epoch 189 Batch   37/37   train_loss = 1.381   time_elapsed = 60453.339   time_remaining = 3138136
+Epoch 190 Batch   37/37   train_loss = 1.373   time_elapsed = 60772.693   time_remaining = 3137790
+Epoch 191 Batch   37/37   train_loss = 1.362   time_elapsed = 61092.261   time_remaining = 3137455
+Model Trained and Saved
+Epoch 192 Batch   37/37   train_loss = 1.379   time_elapsed = 61412.904   time_remaining = 3137176
+Epoch 193 Batch   37/37   train_loss = 1.353   time_elapsed = 61732.758   time_remaining = 3136856
+Epoch 194 Batch   37/37   train_loss = 1.362   time_elapsed = 62051.911   time_remaining = 3136500
+Epoch 195 Batch   37/37   train_loss = 1.352   time_elapsed = 62371.713   time_remaining = 3136178
+Epoch 196 Batch   37/37   train_loss = 1.363   time_elapsed = 62691.020   time_remaining = 3135830
+Epoch 197 Batch   37/37   train_loss = 1.343   time_elapsed = 63010.358   time_remaining = 3135485
+Epoch 198 Batch   37/37   train_loss = 1.331   time_elapsed = 63330.527   time_remaining = 3135181
+Epoch 199 Batch   37/37   train_loss = 1.340   time_elapsed = 63650.124   time_remaining = 3134849
+Epoch 200 Batch   37/37   train_loss = 1.307   time_elapsed = 63969.668   time_remaining = 3134514
+Epoch 201 Batch   37/37   train_loss = 1.310   time_elapsed = 64289.256   time_remaining = 3134181
+Model Trained and Saved
+Epoch 202 Batch   37/37   train_loss = 1.320   time_elapsed = 64610.449   time_remaining = 3133927
+Epoch 203 Batch   37/37   train_loss = 1.315   time_elapsed = 64930.407   time_remaining = 3133612
+Epoch 204 Batch   37/37   train_loss = 1.297   time_elapsed = 65250.399   time_remaining = 3133299
+Epoch 205 Batch   37/37   train_loss = 1.307   time_elapsed = 65569.956   time_remaining = 3132964
+Epoch 206 Batch   37/37   train_loss = 1.306   time_elapsed = 65889.113   time_remaining = 3132611
+Epoch 207 Batch   37/37   train_loss = 1.281   time_elapsed = 66208.615   time_remaining = 3132275
+Epoch 208 Batch   37/37   train_loss = 1.298   time_elapsed = 66528.110   time_remaining = 3131939
+Epoch 209 Batch   37/37   train_loss = 1.284   time_elapsed = 66847.701   time_remaining = 3131607
+Epoch 210 Batch   37/37   train_loss = 1.272   time_elapsed = 67167.148   time_remaining = 3131268
+Epoch 211 Batch   37/37   train_loss = 1.265   time_elapsed = 67486.479   time_remaining = 3130925
+Model Trained and Saved
+Epoch 212 Batch   37/37   train_loss = 1.281   time_elapsed = 67807.202   time_remaining = 3130646
+Epoch 213 Batch   37/37   train_loss = 1.293   time_elapsed = 68125.747   time_remaining = 3130266
+Epoch 214 Batch   37/37   train_loss = 1.274   time_elapsed = 68444.729   time_remaining = 3129907
+Epoch 215 Batch   37/37   train_loss = 1.259   time_elapsed = 68764.155   time_remaining = 3129569
+Epoch 216 Batch   37/37   train_loss = 1.244   time_elapsed = 69083.499   time_remaining = 3129227
+Epoch 217 Batch   37/37   train_loss = 1.239   time_elapsed = 69402.393   time_remaining = 3128865
+Epoch 218 Batch   37/37   train_loss = 1.222   time_elapsed = 69721.665   time_remaining = 3128520
+Epoch 219 Batch   37/37   train_loss = 1.212   time_elapsed = 70040.393   time_remaining = 3128151
+Epoch 220 Batch   37/37   train_loss = 1.218   time_elapsed = 70359.778   time_remaining = 3127812
+Epoch 221 Batch   37/37   train_loss = 1.212   time_elapsed = 70679.356   time_remaining = 3127482
+Model Trained and Saved
+Epoch 222 Batch   37/37   train_loss = 1.198   time_elapsed = 71000.463   time_remaining = 3127219
+Epoch 223 Batch   37/37   train_loss = 1.201   time_elapsed = 71320.003   time_remaining = 3126886
+Epoch 224 Batch   37/37   train_loss = 1.184   time_elapsed = 71639.044   time_remaining = 3126533
+Epoch 225 Batch   37/37   train_loss = 1.195   time_elapsed = 71957.902   time_remaining = 3126171
+Epoch 226 Batch   37/37   train_loss = 1.192   time_elapsed = 72277.317   time_remaining = 3125834
+Epoch 227 Batch   37/37   train_loss = 1.189   time_elapsed = 72597.005   time_remaining = 3125509
+Epoch 228 Batch   37/37   train_loss = 1.186   time_elapsed = 72916.512   time_remaining = 3125176
+Epoch 229 Batch   37/37   train_loss = 1.180   time_elapsed = 73235.687   time_remaining = 3124829
+Epoch 230 Batch   37/37   train_loss = 1.179   time_elapsed = 73554.942   time_remaining = 3124486
+Epoch 231 Batch   37/37   train_loss = 1.179   time_elapsed = 73874.732   time_remaining = 3124166
+Model Trained and Saved
+Epoch 232 Batch   37/37   train_loss = 1.175   time_elapsed = 74195.477   time_remaining = 3123885
+Epoch 233 Batch   37/37   train_loss = 1.176   time_elapsed = 74515.270   time_remaining = 3123565
+Epoch 234 Batch   37/37   train_loss = 1.164   time_elapsed = 74834.782   time_remaining = 3123233
+Epoch 235 Batch   37/37   train_loss = 1.150   time_elapsed = 75155.106   time_remaining = 3122935
+Epoch 236 Batch   37/37   train_loss = 1.175   time_elapsed = 75474.274   time_remaining = 3122588
+Epoch 237 Batch   37/37   train_loss = 1.164   time_elapsed = 75793.916   time_remaining = 3122262
+Epoch 238 Batch   37/37   train_loss = 1.136   time_elapsed = 76113.184   time_remaining = 3121920
+Epoch 239 Batch   37/37   train_loss = 1.139   time_elapsed = 76432.195   time_remaining = 3121568
+Epoch 240 Batch   37/37   train_loss = 1.143   time_elapsed = 76751.741   time_remaining = 3121237
+Epoch 241 Batch   37/37   train_loss = 1.138   time_elapsed = 77071.188   time_remaining = 3120903
+Model Trained and Saved
+Epoch 242 Batch   37/37   train_loss = 1.130   time_elapsed = 77391.530   time_remaining = 3120606
+Epoch 243 Batch   37/37   train_loss = 1.125   time_elapsed = 77710.487   time_remaining = 3120252
+Epoch 244 Batch   37/37   train_loss = 1.129   time_elapsed = 78029.589   time_remaining = 3119904
+Epoch 245 Batch   37/37   train_loss = 1.099   time_elapsed = 78348.482   time_remaining = 3119549
+Epoch 246 Batch   37/37   train_loss = 1.128   time_elapsed = 78667.643   time_remaining = 3119204
+Epoch 247 Batch   37/37   train_loss = 1.123   time_elapsed = 78986.364   time_remaining = 3118842
+Epoch 248 Batch   37/37   train_loss = 1.125   time_elapsed = 79305.583   time_remaining = 3118500
+Epoch 249 Batch   37/37   train_loss = 1.112   time_elapsed = 79627.946   time_remaining = 3118282
+Epoch 250 Batch   37/37   train_loss = 1.111   time_elapsed = 79947.306   time_remaining = 3117945
+Epoch 251 Batch   37/37   train_loss = 1.101   time_elapsed = 80266.594   time_remaining = 3117606
+Model Trained and Saved
+Epoch 252 Batch   37/37   train_loss = 1.108   time_elapsed = 80586.968   time_remaining = 3117309
+Epoch 253 Batch   37/37   train_loss = 1.110   time_elapsed = 80905.921   time_remaining = 3116957
+Epoch 254 Batch   37/37   train_loss = 1.115   time_elapsed = 81228.170   time_remaining = 3116731
+Epoch 255 Batch   37/37   train_loss = 1.097   time_elapsed = 81548.032   time_remaining = 3116414
+Epoch 256 Batch   37/37   train_loss = 1.096   time_elapsed = 81867.504   time_remaining = 3116082
+Epoch 257 Batch   37/37   train_loss = 1.100   time_elapsed = 82187.394   time_remaining = 3115766
+Epoch 258 Batch   37/37   train_loss = 1.074   time_elapsed = 82506.401   time_remaining = 3115416
+Epoch 259 Batch   37/37   train_loss = 1.069   time_elapsed = 82825.257   time_remaining = 3115061
+Epoch 260 Batch   37/37   train_loss = 1.083   time_elapsed = 83147.662   time_remaining = 3114839
+Epoch 261 Batch   37/37   train_loss = 1.068   time_elapsed = 83466.690   time_remaining = 3114491
+Model Trained and Saved
+Epoch 262 Batch   37/37   train_loss = 1.057   time_elapsed = 83787.515   time_remaining = 3114209
+Epoch 263 Batch   37/37   train_loss = 1.060   time_elapsed = 84106.451   time_remaining = 3113857
+Epoch 264 Batch   37/37   train_loss = 1.054   time_elapsed = 84425.682   time_remaining = 3113517
+Epoch 265 Batch   37/37   train_loss = 1.050   time_elapsed = 84744.804   time_remaining = 3113172
+Epoch 266 Batch   37/37   train_loss = 1.040   time_elapsed = 85063.961   time_remaining = 3112829
+Epoch 267 Batch   37/37   train_loss = 1.040   time_elapsed = 85383.310   time_remaining = 3112493
+Epoch 268 Batch   37/37   train_loss = 1.039   time_elapsed = 85702.688   time_remaining = 3112159
+Epoch 269 Batch   37/37   train_loss = 1.034   time_elapsed = 86022.036   time_remaining = 3111823
+Epoch 270 Batch   37/37   train_loss = 1.026   time_elapsed = 86341.143   time_remaining = 3111479
+Epoch 271 Batch   37/37   train_loss = 1.032   time_elapsed = 86659.928   time_remaining = 3111123
+Model Trained and Saved
+Epoch 272 Batch   37/37   train_loss = 1.025   time_elapsed = 86980.997   time_remaining = 3110850
+Epoch 273 Batch   37/37   train_loss = 1.020   time_elapsed = 87299.359   time_remaining = 3110479
+Epoch 274 Batch   37/37   train_loss = 1.026   time_elapsed = 87618.241   time_remaining = 3110128
+Epoch 275 Batch   37/37   train_loss = 1.033   time_elapsed = 87936.983   time_remaining = 3109771
+Epoch 276 Batch   37/37   train_loss = 1.016   time_elapsed = 88256.202   time_remaining = 3109432
+Epoch 277 Batch   37/37   train_loss = 1.011   time_elapsed = 88575.248   time_remaining = 3109087
+Epoch 278 Batch   37/37   train_loss = 0.997   time_elapsed = 88893.973   time_remaining = 3108731
+Epoch 279 Batch   37/37   train_loss = 1.005   time_elapsed = 89212.535   time_remaining = 3108369
+Epoch 280 Batch   37/37   train_loss = 0.998   time_elapsed = 89531.001   time_remaining = 3108005
+Epoch 281 Batch   37/37   train_loss = 1.003   time_elapsed = 89849.956   time_remaining = 3107657
+Model Trained and Saved
+Epoch 282 Batch   37/37   train_loss = 0.996   time_elapsed = 90170.535   time_remaining = 3107366
+Epoch 283 Batch   37/37   train_loss = 0.992   time_elapsed = 90489.391   time_remaining = 3107016
+Epoch 284 Batch   37/37   train_loss = 0.997   time_elapsed = 90808.255   time_remaining = 3106666
+Epoch 285 Batch   37/37   train_loss = 1.013   time_elapsed = 91126.900   time_remaining = 3106308
+Epoch 286 Batch   37/37   train_loss = 1.002   time_elapsed = 91445.800   time_remaining = 3105960
+Epoch 287 Batch   37/37   train_loss = 0.985   time_elapsed = 91764.093   time_remaining = 3105591
+Epoch 288 Batch   37/37   train_loss = 0.982   time_elapsed = 92082.957   time_remaining = 3105242
+Epoch 289 Batch   37/37   train_loss = 0.974   time_elapsed = 92402.016   time_remaining = 3104900
+Epoch 290 Batch   37/37   train_loss = 0.973   time_elapsed = 92720.804   time_remaining = 3104548
+Epoch 291 Batch   37/37   train_loss = 0.989   time_elapsed = 93039.483   time_remaining = 3104194
+Model Trained and Saved
+Epoch 292 Batch   37/37   train_loss = 0.980   time_elapsed = 93359.877   time_remaining = 3103896
+Epoch 293 Batch   37/37   train_loss = 0.965   time_elapsed = 93678.938   time_remaining = 3103554
+Epoch 294 Batch   37/37   train_loss = 0.972   time_elapsed = 93997.911   time_remaining = 3103210
+Epoch 295 Batch   37/37   train_loss = 0.966   time_elapsed = 94317.339   time_remaining = 3102881
+Epoch 296 Batch   37/37   train_loss = 0.954   time_elapsed = 94636.407   time_remaining = 3102540
+Epoch 297 Batch   37/37   train_loss = 0.955   time_elapsed = 94955.295   time_remaining = 3102193
+Epoch 298 Batch   37/37   train_loss = 0.973   time_elapsed = 95274.390   time_remaining = 3101853
+Epoch 299 Batch   37/37   train_loss = 0.944   time_elapsed = 95593.395   time_remaining = 3101510
+Epoch 300 Batch   37/37   train_loss = 0.956   time_elapsed = 95912.542   time_remaining = 3101172
+Epoch 301 Batch   37/37   train_loss = 0.952   time_elapsed = 96231.578   time_remaining = 3100831
+Model Trained and Saved
+Epoch 302 Batch   37/37   train_loss = 0.940   time_elapsed = 96552.665   time_remaining = 3100555
+Epoch 303 Batch   37/37   train_loss = 0.926   time_elapsed = 96871.795   time_remaining = 3100217
+Epoch 304 Batch   37/37   train_loss = 0.937   time_elapsed = 97191.098   time_remaining = 3099885
+Epoch 305 Batch   37/37   train_loss = 0.944   time_elapsed = 97510.738   time_remaining = 3099563
+Epoch 306 Batch   37/37   train_loss = 0.936   time_elapsed = 97830.325   time_remaining = 3099239
+Epoch 307 Batch   37/37   train_loss = 0.927   time_elapsed = 98149.337   time_remaining = 3098897
+Epoch 308 Batch   37/37   train_loss = 0.930   time_elapsed = 98468.752   time_remaining = 3098569
+Epoch 309 Batch   37/37   train_loss = 0.941   time_elapsed = 98788.192   time_remaining = 3098241
+Epoch 310 Batch   37/37   train_loss = 0.916   time_elapsed = 99107.698   time_remaining = 3097915
+Epoch 311 Batch   37/37   train_loss = 0.918   time_elapsed = 99427.315   time_remaining = 3097592
+Model Trained and Saved
+Epoch 312 Batch   37/37   train_loss = 0.922   time_elapsed = 99748.128   time_remaining = 3097307
+Epoch 313 Batch   37/37   train_loss = 0.933   time_elapsed = 100067.742   time_remaining = 3096985
+Epoch 314 Batch   37/37   train_loss = 0.918   time_elapsed = 100387.073   time_remaining = 3096653
+Epoch 315 Batch   37/37   train_loss = 0.915   time_elapsed = 100706.533   time_remaining = 3096326
+Epoch 316 Batch   37/37   train_loss = 0.922   time_elapsed = 101025.976   time_remaining = 3095999
+Epoch 317 Batch   37/37   train_loss = 0.906   time_elapsed = 101345.191   time_remaining = 3095664
+Epoch 318 Batch   37/37   train_loss = 0.911   time_elapsed = 101663.915   time_remaining = 3095315
+Epoch 319 Batch   37/37   train_loss = 0.899   time_elapsed = 101983.203   time_remaining = 3094982
+Epoch 320 Batch   37/37   train_loss = 0.908   time_elapsed = 102302.824   time_remaining = 3094660
+Epoch 321 Batch   37/37   train_loss = 0.901   time_elapsed = 102622.069   time_remaining = 3094327
+Model Trained and Saved
+Epoch 322 Batch   37/37   train_loss = 0.898   time_elapsed = 102943.001   time_remaining = 3094045
+Epoch 323 Batch   37/37   train_loss = 0.902   time_elapsed = 103261.974   time_remaining = 3093703
+Epoch 324 Batch   37/37   train_loss = 0.897   time_elapsed = 103581.373   time_remaining = 3093375
+Epoch 325 Batch   37/37   train_loss = 0.889   time_elapsed = 103900.749   time_remaining = 3093045
+Epoch 326 Batch   37/37   train_loss = 0.894   time_elapsed = 104220.127   time_remaining = 3092716
+Epoch 327 Batch   37/37   train_loss = 0.878   time_elapsed = 104539.865   time_remaining = 3092398
+Epoch 328 Batch   37/37   train_loss = 0.887   time_elapsed = 104859.393   time_remaining = 3092073
+Epoch 329 Batch   37/37   train_loss = 0.881   time_elapsed = 105179.307   time_remaining = 3091760
+Epoch 330 Batch   37/37   train_loss = 0.883   time_elapsed = 105498.762   time_remaining = 3091433
+Epoch 331 Batch   37/37   train_loss = 0.881   time_elapsed = 105817.770   time_remaining = 3091094
+Model Trained and Saved
+Epoch 332 Batch   37/37   train_loss = 0.872   time_elapsed = 106138.721   time_remaining = 3090811
+Epoch 333 Batch   37/37   train_loss = 0.873   time_elapsed = 106458.611   time_remaining = 3090497
+Epoch 334 Batch   37/37   train_loss = 0.882   time_elapsed = 106778.161   time_remaining = 3090173
+Epoch 335 Batch   37/37   train_loss = 0.870   time_elapsed = 107097.722   time_remaining = 3089849
+Epoch 336 Batch   37/37   train_loss = 0.863   time_elapsed = 107417.626   time_remaining = 3089536
+Epoch 337 Batch   37/37   train_loss = 0.863   time_elapsed = 107737.400   time_remaining = 3089218
+Epoch 338 Batch   37/37   train_loss = 0.870   time_elapsed = 108057.111   time_remaining = 3088899
+Epoch 339 Batch   37/37   train_loss = 0.864   time_elapsed = 108376.937   time_remaining = 3088583
+Epoch 340 Batch   37/37   train_loss = 0.867   time_elapsed = 108696.757   time_remaining = 3088267
+Epoch 341 Batch   37/37   train_loss = 0.859   time_elapsed = 109016.567   time_remaining = 3087950
+Model Trained and Saved
+Epoch 342 Batch   37/37   train_loss = 0.860   time_elapsed = 109337.661   time_remaining = 3087670
+Epoch 343 Batch   37/37   train_loss = 0.857   time_elapsed = 109656.990   time_remaining = 3087340
+Epoch 344 Batch   37/37   train_loss = 0.861   time_elapsed = 109976.589   time_remaining = 3087017
+Epoch 345 Batch   37/37   train_loss = 0.855   time_elapsed = 110296.011   time_remaining = 3086690
+Epoch 346 Batch   37/37   train_loss = 0.853   time_elapsed = 110615.384   time_remaining = 3086361
+Epoch 347 Batch   37/37   train_loss = 0.838   time_elapsed = 110934.765   time_remaining = 3086033
+Epoch 348 Batch   37/37   train_loss = 0.846   time_elapsed = 111253.795   time_remaining = 3085694
+Epoch 349 Batch   37/37   train_loss = 0.836   time_elapsed = 111573.027   time_remaining = 3085362
+Epoch 350 Batch   37/37   train_loss = 0.832   time_elapsed = 111892.245   time_remaining = 3085029
+Epoch 351 Batch   37/37   train_loss = 0.852   time_elapsed = 112211.812   time_remaining = 3084706
+Model Trained and Saved
+Epoch 352 Batch   37/37   train_loss = 0.833   time_elapsed = 112532.839   time_remaining = 3084423
+Epoch 353 Batch   37/37   train_loss = 0.831   time_elapsed = 112852.558   time_remaining = 3084104
+Epoch 354 Batch   37/37   train_loss = 0.841   time_elapsed = 113172.476   time_remaining = 3083790
+Epoch 355 Batch   37/37   train_loss = 0.838   time_elapsed = 113491.871   time_remaining = 3083462
+Epoch 356 Batch   37/37   train_loss = 0.826   time_elapsed = 113811.473   time_remaining = 3083140
+Epoch 357 Batch   37/37   train_loss = 0.822   time_elapsed = 114131.247   time_remaining = 3082822
+Epoch 358 Batch   37/37   train_loss = 0.835   time_elapsed = 114451.355   time_remaining = 3082514
+Epoch 359 Batch   37/37   train_loss = 0.831   time_elapsed = 114770.991   time_remaining = 3082193
+Epoch 360 Batch   37/37   train_loss = 0.825   time_elapsed = 115090.400   time_remaining = 3081865
+Epoch 361 Batch   37/37   train_loss = 0.820   time_elapsed = 115409.920   time_remaining = 3081541
+Model Trained and Saved
+Epoch 362 Batch   37/37   train_loss = 0.802   time_elapsed = 115731.093   time_remaining = 3081260
+Epoch 363 Batch   37/37   train_loss = 0.818   time_elapsed = 116050.827   time_remaining = 3080942
+Epoch 364 Batch   37/37   train_loss = 0.820   time_elapsed = 116370.541   time_remaining = 3080622
+Epoch 365 Batch   37/37   train_loss = 0.825   time_elapsed = 116689.642   time_remaining = 3080287
+Epoch 366 Batch   37/37   train_loss = 0.812   time_elapsed = 117009.058   time_remaining = 3079960
+Epoch 367 Batch   37/37   train_loss = 0.813   time_elapsed = 117328.876   time_remaining = 3079643
+Epoch 368 Batch   37/37   train_loss = 0.810   time_elapsed = 117648.455   time_remaining = 3079320
+Epoch 369 Batch   37/37   train_loss = 0.817   time_elapsed = 117968.219   time_remaining = 3079002
+Epoch 370 Batch   37/37   train_loss = 0.811   time_elapsed = 118287.360   time_remaining = 3078668
+Epoch 371 Batch   37/37   train_loss = 0.813   time_elapsed = 118607.077   time_remaining = 3078349
+Model Trained and Saved
+Epoch 372 Batch   37/37   train_loss = 0.799   time_elapsed = 118928.623   time_remaining = 3078077
+Epoch 373 Batch   37/37   train_loss = 0.797   time_elapsed = 119249.232   time_remaining = 3077781
+Epoch 374 Batch   37/37   train_loss = 0.803   time_elapsed = 119568.969   time_remaining = 3077462
+Epoch 375 Batch   37/37   train_loss = 0.801   time_elapsed = 119888.318   time_remaining = 3077134
+Epoch 376 Batch   37/37   train_loss = 0.806   time_elapsed = 120208.163   time_remaining = 3076817
+Epoch 377 Batch   37/37   train_loss = 0.781   time_elapsed = 120527.422   time_remaining = 3076486
+Epoch 378 Batch   37/37   train_loss = 0.778   time_elapsed = 120846.951   time_remaining = 3076162
+Epoch 379 Batch   37/37   train_loss = 0.792   time_elapsed = 121166.655   time_remaining = 3075843
+Epoch 380 Batch   37/37   train_loss = 0.804   time_elapsed = 121486.357   time_remaining = 3075523
+Epoch 381 Batch   37/37   train_loss = 0.795   time_elapsed = 121806.053   time_remaining = 3075203
+Model Trained and Saved
+Epoch 382 Batch   37/37   train_loss = 0.782   time_elapsed = 122127.679   time_remaining = 3074932
+Epoch 383 Batch   37/37   train_loss = 0.779   time_elapsed = 122447.223   time_remaining = 3074608
+Epoch 384 Batch   37/37   train_loss = 0.783   time_elapsed = 122770.410   time_remaining = 3074376
+Epoch 385 Batch   37/37   train_loss = 0.784   time_elapsed = 123090.361   time_remaining = 3074062
+Epoch 386 Batch   37/37   train_loss = 0.776   time_elapsed = 123410.031   time_remaining = 3073741
+Epoch 387 Batch   37/37   train_loss = 0.784   time_elapsed = 123729.923   time_remaining = 3073426
+Epoch 388 Batch   37/37   train_loss = 0.783   time_elapsed = 124049.647   time_remaining = 3073106
+Epoch 389 Batch   37/37   train_loss = 0.772   time_elapsed = 124369.128   time_remaining = 3072781
+Epoch 390 Batch   37/37   train_loss = 0.782   time_elapsed = 124688.434   time_remaining = 3072451
+Epoch 391 Batch   37/37   train_loss = 0.774   time_elapsed = 125007.735   time_remaining = 3072121
+Model Trained and Saved
+Epoch 392 Batch   37/37   train_loss = 0.769   time_elapsed = 125328.554   time_remaining = 3071828
+Epoch 393 Batch   37/37   train_loss = 0.784   time_elapsed = 125648.132   time_remaining = 3071505
+Epoch 394 Batch   37/37   train_loss = 0.769   time_elapsed = 125967.295   time_remaining = 3071172
+Epoch 395 Batch   37/37   train_loss = 0.763   time_elapsed = 126287.399   time_remaining = 3070862
+Epoch 396 Batch   37/37   train_loss = 0.765   time_elapsed = 126607.298   time_remaining = 3070547
+Epoch 397 Batch   37/37   train_loss = 0.760   time_elapsed = 126927.017   time_remaining = 3070227
+Epoch 398 Batch   37/37   train_loss = 0.769   time_elapsed = 127246.966   time_remaining = 3069913
+Epoch 399 Batch   37/37   train_loss = 0.757   time_elapsed = 127566.917   time_remaining = 3069599
+Epoch 400 Batch   37/37   train_loss = 0.774   time_elapsed = 127887.308   time_remaining = 3069295
+Epoch 401 Batch   37/37   train_loss = 0.758   time_elapsed = 128206.981   time_remaining = 3068975
+Model Trained and Saved
+Epoch 402 Batch   37/37   train_loss = 0.756   time_elapsed = 128528.147   time_remaining = 3068689
+Epoch 403 Batch   37/37   train_loss = 0.776   time_elapsed = 128847.759   time_remaining = 3068367
+Epoch 404 Batch   37/37   train_loss = 0.765   time_elapsed = 129167.755   time_remaining = 3068054
+Epoch 405 Batch   37/37   train_loss = 0.769   time_elapsed = 129487.882   time_remaining = 3067744
+Epoch 406 Batch   37/37   train_loss = 0.753   time_elapsed = 129807.396   time_remaining = 3067419
+Epoch 407 Batch   37/37   train_loss = 0.766   time_elapsed = 130127.245   time_remaining = 3067102
+Epoch 408 Batch   37/37   train_loss = 0.749   time_elapsed = 130447.202   time_remaining = 3066788
+Epoch 409 Batch   37/37   train_loss = 0.742   time_elapsed = 130766.994   time_remaining = 3066470
+Epoch 410 Batch   37/37   train_loss = 0.750   time_elapsed = 131086.527   time_remaining = 3066146
+Epoch 411 Batch   37/37   train_loss = 0.729   time_elapsed = 131406.659   time_remaining = 3065836
+Model Trained and Saved
+Epoch 412 Batch   37/37   train_loss = 0.745   time_elapsed = 131728.186   time_remaining = 3065558
+Epoch 413 Batch   37/37   train_loss = 0.746   time_elapsed = 132048.250   time_remaining = 3065246
+Epoch 414 Batch   37/37   train_loss = 0.741   time_elapsed = 132368.560   time_remaining = 3064940
+Epoch 415 Batch   37/37   train_loss = 0.743   time_elapsed = 132688.328   time_remaining = 3064621
+Epoch 416 Batch   37/37   train_loss = 0.733   time_elapsed = 133007.799   time_remaining = 3064295
+Epoch 417 Batch   37/37   train_loss = 0.749   time_elapsed = 133327.474   time_remaining = 3063974
+Epoch 418 Batch   37/37   train_loss = 0.751   time_elapsed = 133647.350   time_remaining = 3063658
+Epoch 419 Batch   37/37   train_loss = 0.747   time_elapsed = 133967.819   time_remaining = 3063355
+Epoch 420 Batch   37/37   train_loss = 0.748   time_elapsed = 134288.204   time_remaining = 3063050
+Epoch 421 Batch   37/37   train_loss = 0.737   time_elapsed = 134608.962   time_remaining = 3062754
+Model Trained and Saved
+Epoch 422 Batch   37/37   train_loss = 0.728   time_elapsed = 134930.557   time_remaining = 3062476
+Epoch 423 Batch   37/37   train_loss = 0.726   time_elapsed = 135250.587   time_remaining = 3062163
+Epoch 424 Batch   37/37   train_loss = 0.726   time_elapsed = 135570.299   time_remaining = 3061842
+Epoch 425 Batch   37/37   train_loss = 0.721   time_elapsed = 135890.743   time_remaining = 3061538
+Epoch 426 Batch   37/37   train_loss = 0.722   time_elapsed = 136210.849   time_remaining = 3061227
+Epoch 427 Batch   37/37   train_loss = 0.717   time_elapsed = 136530.842   time_remaining = 3060913
+Epoch 428 Batch   37/37   train_loss = 0.718   time_elapsed = 136850.646   time_remaining = 3060594
+Epoch 429 Batch   37/37   train_loss = 0.714   time_elapsed = 137170.657   time_remaining = 3060281
+Epoch 430 Batch   37/37   train_loss = 0.701   time_elapsed = 137490.567   time_remaining = 3059964
+Epoch 431 Batch   37/37   train_loss = 0.703   time_elapsed = 137810.145   time_remaining = 3059641
+Model Trained and Saved
+Epoch 432 Batch   37/37   train_loss = 0.719   time_elapsed = 138131.174   time_remaining = 3059350
+Epoch 433 Batch   37/37   train_loss = 0.714   time_elapsed = 138450.361   time_remaining = 3059018
+Epoch 434 Batch   37/37   train_loss = 0.710   time_elapsed = 138769.628   time_remaining = 3058687
+Epoch 435 Batch   37/37   train_loss = 0.703   time_elapsed = 139089.131   time_remaining = 3058362
+Epoch 436 Batch   37/37   train_loss = 0.704   time_elapsed = 139408.979   time_remaining = 3058045
+Epoch 437 Batch   37/37   train_loss = 0.708   time_elapsed = 139728.974   time_remaining = 3057730
+Epoch 438 Batch   37/37   train_loss = 0.688   time_elapsed = 140050.896   time_remaining = 3057458
+Epoch 439 Batch   37/37   train_loss = 0.700   time_elapsed = 140370.849   time_remaining = 3057143
+Epoch 440 Batch   37/37   train_loss = 0.701   time_elapsed = 140690.655   time_remaining = 3056824
+Epoch 441 Batch   37/37   train_loss = 0.702   time_elapsed = 141010.108   time_remaining = 3056498
+Model Trained and Saved
+Epoch 442 Batch   37/37   train_loss = 0.688   time_elapsed = 141331.379   time_remaining = 3056211
+Epoch 443 Batch   37/37   train_loss = 0.709   time_elapsed = 141651.477   time_remaining = 3055899
+Epoch 444 Batch   37/37   train_loss = 0.702   time_elapsed = 141971.223   time_remaining = 3055579
+Epoch 445 Batch   37/37   train_loss = 0.704   time_elapsed = 142290.746   time_remaining = 3055254
+Epoch 446 Batch   37/37   train_loss = 0.688   time_elapsed = 142610.352   time_remaining = 3054931
+Epoch 447 Batch   37/37   train_loss = 0.682   time_elapsed = 142929.946   time_remaining = 3054608
+Epoch 448 Batch   37/37   train_loss = 0.692   time_elapsed = 143249.687   time_remaining = 3054288
+Epoch 449 Batch   37/37   train_loss = 0.697   time_elapsed = 143569.755   time_remaining = 3053975
+Epoch 450 Batch   37/37   train_loss = 0.689   time_elapsed = 143889.654   time_remaining = 3053658
+Epoch 451 Batch   37/37   train_loss = 0.681   time_elapsed = 144209.469   time_remaining = 3053340
+Model Trained and Saved
+Epoch 452 Batch   37/37   train_loss = 0.684   time_elapsed = 144530.686   time_remaining = 3053051
+Epoch 453 Batch   37/37   train_loss = 0.689   time_elapsed = 144850.637   time_remaining = 3052735
+Epoch 454 Batch   37/37   train_loss = 0.679   time_elapsed = 145171.533   time_remaining = 3052439
+Epoch 455 Batch   37/37   train_loss = 0.684   time_elapsed = 145491.675   time_remaining = 3052128
+Epoch 456 Batch   37/37   train_loss = 0.678   time_elapsed = 145811.607   time_remaining = 3051811
+Epoch 457 Batch   37/37   train_loss = 0.677   time_elapsed = 146131.735   time_remaining = 3051499
+Epoch 458 Batch   37/37   train_loss = 0.677   time_elapsed = 146451.869   time_remaining = 3051187
+Epoch 459 Batch   37/37   train_loss = 0.686   time_elapsed = 146771.681   time_remaining = 3050868
+Epoch 460 Batch   37/37   train_loss = 0.672   time_elapsed = 147091.448   time_remaining = 3050549
+Epoch 461 Batch   37/37   train_loss = 0.679   time_elapsed = 147410.706   time_remaining = 3050218
+Model Trained and Saved
+Epoch 462 Batch   37/37   train_loss = 0.675   time_elapsed = 147731.580   time_remaining = 3049922
+Epoch 463 Batch   37/37   train_loss = 0.679   time_elapsed = 148051.153   time_remaining = 3049598
+Epoch 464 Batch   37/37   train_loss = 0.688   time_elapsed = 148371.329   time_remaining = 3049287
+Epoch 465 Batch   37/37   train_loss = 0.667   time_elapsed = 148691.344   time_remaining = 3048972
+Epoch 466 Batch   37/37   train_loss = 0.663   time_elapsed = 149011.452   time_remaining = 3048659
+Epoch 467 Batch   37/37   train_loss = 0.670   time_elapsed = 149330.964   time_remaining = 3048334
+Epoch 468 Batch   37/37   train_loss = 0.664   time_elapsed = 149650.672   time_remaining = 3048013
+Epoch 469 Batch   37/37   train_loss = 0.660   time_elapsed = 149970.666   time_remaining = 3047698
+Epoch 470 Batch   37/37   train_loss = 0.677   time_elapsed = 150290.449   time_remaining = 3047379
+Epoch 471 Batch   37/37   train_loss = 0.681   time_elapsed = 150610.206   time_remaining = 3047059
+Model Trained and Saved
+Epoch 472 Batch   37/37   train_loss = 0.669   time_elapsed = 150931.478   time_remaining = 3046769
+Epoch 473 Batch   37/37   train_loss = 0.675   time_elapsed = 151251.593   time_remaining = 3046457
+Epoch 474 Batch   37/37   train_loss = 0.667   time_elapsed = 151571.762   time_remaining = 3046145
+Epoch 475 Batch   37/37   train_loss = 0.664   time_elapsed = 151891.488   time_remaining = 3045824
+Epoch 476 Batch   37/37   train_loss = 0.667   time_elapsed = 152209.951   time_remaining = 3045478
+Epoch 477 Batch   37/37   train_loss = 0.673   time_elapsed = 152525.457   time_remaining = 3045073
+Epoch 478 Batch   37/37   train_loss = 0.668   time_elapsed = 152840.741   time_remaining = 3044664
+Epoch 479 Batch   37/37   train_loss = 0.664   time_elapsed = 153158.055   time_remaining = 3044296
+Epoch 480 Batch   37/37   train_loss = 0.673   time_elapsed = 153482.193   time_remaining = 3044063
+Epoch 481 Batch   37/37   train_loss = 0.664   time_elapsed = 153803.792   time_remaining = 3043780
+Model Trained and Saved
+Epoch 482 Batch   37/37   train_loss = 0.655   time_elapsed = 154121.231   time_remaining = 3043415
+Epoch 483 Batch   37/37   train_loss = 0.666   time_elapsed = 154436.290   time_remaining = 3043002
+Epoch 484 Batch   37/37   train_loss = 0.654   time_elapsed = 154751.624   time_remaining = 3042596
+Epoch 485 Batch   37/37   train_loss = 0.666   time_elapsed = 155067.498   time_remaining = 3042200
